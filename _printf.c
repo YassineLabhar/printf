@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
- * Project well done by:
- * Yassine Labhar: [@YassineLabhar](https://github.com/YassineLabhar)
- * Muhammad Ali: [@mu9222](https://github.com/mu9222)
- */
-
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
@@ -70,3 +64,4 @@ void print_buffer(char buffer[], int *buff_ind)
 
 	*buff_ind = 0;
 }
+

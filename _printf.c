@@ -1,5 +1,11 @@
 #include "main.h"
 
+ /*---------------------------------------*/
+ /* Authors:                              */
+ /* Yassine Labhar: @YassineLabhar        */
+ /* Muhammad Ali: @mu9222                 */
+ /*---------------------------------------*/
+
 void print_buffer(char buffer[], int *buff_ind);
 
 /**

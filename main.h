@@ -4,6 +4,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
+ /*---------------------------------------*/
+ /* Authors:                              */
+ /* Yassine Labhar: @YassineLabhar        */
+ /* Muhammad Ali: @mu9222                 */
+ /*---------------------------------------*/
+
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 

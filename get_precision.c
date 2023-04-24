@@ -1,5 +1,11 @@
 #include "main.h"
 
+ /*---------------------------------------*/
+ /* Authors:                              */
+ /* Yassine Labhar: @YassineLabhar        */
+ /* Muhammad Ali: @mu9222                 */
+ /*---------------------------------------*/
+
 /**
  * get_precision - Calculates the precision for printing
  * @format: Formatted string in which to print the arguments

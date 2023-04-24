@@ -1,5 +1,11 @@
 #include "main.h"
 
+ /*---------------------------------------*/
+ /* Authors:                              */
+ /* Yassine Labhar: @YassineLabhar        */
+ /* Muhammad Ali: @mu9222                 */
+ /*---------------------------------------*/
+
 /**
  * get_width - Calculates the width for printing
  * @format: Formatted string in which to print the arguments.

@@ -13,30 +13,27 @@
  * @list: list of arguments
  * Return: The precision value, or -1 if it is not specified
  */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
-int get_precision(const char *format, int *i, va_list list)
-{
-	int precision = -1;
+int get_precision(char *format) {
+    int precision = -1;  // initialize to -1 (undefined)
+    int len = strlen(format);
 
-	if (format[*i] == '.')
-	{
-		precision = 0;
-		++(*i);
+    for (int i = 0; i < len; i++) {
+        if (format[i] == '.') {
+            if (i < len - 1 && isdigit(format[i+1])) {
+                // precision is specified with digits after '.'
+                precision = atoi(&format[i+1]);
+            } else {
+                // precision is specified without digits after '.'
+                precision = 0;
+            }
+            break;  // stop searching for precision
+        }
+    }
 
-		if (format[*i] == '*')
-		{
-			precision = va_arg(list, int);
-			++(*i);
-		}
-		else
-		{
-			while (format[*i] >= '0' && format[*i] <= '9')
-			{
-				precision = precision * 10 + (format[*i] - '0');
-				++(*i);
-			}
-		}
-	}
-
-	return (precision);
+    return precision;
 }

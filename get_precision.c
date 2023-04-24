@@ -13,9 +13,6 @@
  * @list: list of arguments
  * Return: The precision value, or -1 if it is not specified
  */
-#include <stdlib.h>
-#include <stdbool.h>
-
 int get_precision(const char *format, int start, va_list args) {
     int precision = -1;
     bool found_precision = false;

@@ -107,7 +107,7 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 ## 14. The flood of print has turned reading into a process of gulping rather than savoring
     - Handle the following custom conversion specifier:
     - R: prints the rot13'ed string
-## 15.  *
+## 15. *
     - All the above options work well together.
 
 ## Authors:

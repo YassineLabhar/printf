@@ -1,5 +1,11 @@
 #include "main.h"
 
+ /*---------------------------------------*/
+ /* Authors:                              */
+ /* Yassine Labhar: @YassineLabhar        */
+ /* Muhammad Ali: @mu9222                 */
+ /*---------------------------------------*/
+
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
  * print_unsigned - Prints an unsigned number

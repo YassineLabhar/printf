@@ -9,34 +9,39 @@
 /**
  * get_precision - Calculates the precision for printing
  * @format: Formatted string in which to print the arguments
- * @i: Index of the current character in the format string
- * @list: List of arguments
+ * @i: List of arguments to be printed.
+ * @list: list of arguments.
  *
- * Return: The precision
+ * Return: Precision.
  */
 int get_precision(const char *format, int i, va_list list)
 {
-    int precision = -1;
+	int precision = -1;
 
-    if (format[i] != '.')
-        return (precision);
+	if (format[i] != '.')
+		return (precision);
 
-    precision = 0;
-    i++;
+	i++;
 
-    if (format[i] == '*')
-    {
-        precision = va_arg(list, int);
-        i++;
-    }
-    else
-    {
-        while (is_digit(format[i]))
-        {
-            precision = precision * 10 + (format[i] - '0');
-            i++;
-        }
-    }
+	if (format[i] == '*')
+	{
+		precision = va_arg(list, int);
+		if (precision < 0)
+			precision = -1;
+		return (precision);
+	}
 
-    return (precision);
+	precision = 0;
+
+	while (is_digit(format[i]))
+	{
+		precision *= 10;
+		precision += (format[i] - '0');
+		i++;
+	}
+
+	if (precision == 0)
+		precision = -1;
+
+	return (precision);
 }

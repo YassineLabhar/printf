@@ -1,5 +1,11 @@
 #include "main.h"
 
+ /*---------------------------------------*/
+ /* Authors:                              */
+ /* Yassine Labhar: @YassineLabhar        */
+ /* Muhammad Ali: @mu9222                 */
+ /*---------------------------------------*/
+
 /**
  * is_printable - Evaluates if a char is printable
  * @c: Char to be evaluated.
